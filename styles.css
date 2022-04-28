@@ -1,0 +1,27 @@
+.split {
+    display: flex;
+    flex-direction: row;
+}
+
+.gutter {
+    background-color: #eee;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.gutter.gutter-horizontal {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==');
+    cursor: col-resize;
+}
+
+body {
+    height: 100vh;
+    font-size: 12px;
+    max-height: 100vh;
+    overflow-y: hidden;
+}
+
+#colA, #colB {
+    overflow-y: scroll;
+    max-height: 70vh;
+}
