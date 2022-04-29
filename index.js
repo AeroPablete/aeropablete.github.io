@@ -158,7 +158,7 @@ const ORDER_LIST = [
  * 
  */
 function initScreenSplitter() {
-    Split(['#colA', '#colB'])
+    Split(['#colA', '#colB'], { minSize: 0, snapOffset: 250 })
 }
 
 /**
