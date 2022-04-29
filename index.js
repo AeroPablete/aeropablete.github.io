@@ -103,6 +103,57 @@ const DRIVER_LIST = [
     }
 ];
 
+const ORDER_LIST = [
+    {
+        id: "Order#0001",
+        clientId: "Client-0001",
+        clientName: "L'Oréal",
+        pickupDate: "2022-05-01",
+        weight: 0,
+        volume: 0,
+        address: {
+            stNumber: "999",
+            stName: "Fake St",
+            zipCode: "XXX XXX",
+            city: "Montreal", 
+            province: "QC",
+            country: "CAN"
+        }
+    },
+    {
+        id: "Order#0002",
+        clientId: "Client-0001",
+        clientName: "L'Oréal",
+        pickupDate: "2022-05-01",
+        weight: 0,
+        volume: 0,
+        address: {
+            stNumber: "999",
+            stName: "Fake St",
+            zipCode: "XXX XXX",
+            city: "Montreal", 
+            province: "QC",
+            country: "CAN"
+        }
+    },
+    {
+        id: "Order#0003",
+        clientId: "Client-0002",
+        clientName: "Coca-Cola",
+        pickupDate: "2022-05-01",
+        weight: 0,
+        volume: 0,
+        address: {
+            stNumber: "999",
+            stName: "Fake St",
+            zipCode: "XXX XXX",
+            city: "Montreal", 
+            province: "QC",
+            country: "CAN"
+        }
+    }
+];
+
 /**
  * 
  */
@@ -114,8 +165,17 @@ function initScreenSplitter() {
  * 
  */
 function initHandlebars() {
+    Handlebars.registerHelper("count", count);
     Handlebars.registerHelper("isBasedInCanada", isBasedInCanada);
     Handlebars.registerHelper("isBasedInUSA", isBasedInUSA);
+}
+
+/**
+ * 
+ * @param {*} arr 
+ */
+function count(arr) {
+    return arr.length;
 }
 
 /**
@@ -128,7 +188,7 @@ function isBasedInCanada(country) {
 /**
  * 
  */
- function isBasedInUSA(country) {
+function isBasedInUSA(country) {
     return "USA" === country;
 }
 
@@ -205,10 +265,27 @@ function loadDriverList(driverList) {
     document.getElementById("globalKPIs").innerHTML = template({ kpis });
 }
 
+/**
+ * 
+ */
+function loadOrderList() {
+    const clients = {};
+
+    ORDER_LIST.forEach(o => {
+        const client = clients[o.clientId] || { clientId: o.clientId, clientName: o.clientName, orderList: [] };
+        client.orderList.push(o);
+        clients[o.clientId] = client;
+    })
+
+    const template = Handlebars.compile(document.getElementById("orderList-tpl").innerHTML)
+    document.getElementById("colB").innerHTML = template({ clients });
+}
+
 (function() {
     initScreenSplitter();  
     initHandlebars();
     loadDriverList();
     loadGlobalKPIs();
+    loadOrderList();
     setEventBindings();  
 })()
