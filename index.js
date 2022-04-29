@@ -2,6 +2,8 @@ const DRIVER_LIST = [
     {
         firstName: "John",
         lastName: "Doe",
+        now: "Delivery",
+        next: "Rest",
         kpis: {
             pickUpsAssigned: 8,
             deliveriesToDo: 10,
@@ -51,6 +53,8 @@ const DRIVER_LIST = [
     {
         firstName: "Jane",
         lastName: "Doe",
+        now: "Delivery",
+        next: "Rest",
         kpis: {
             pickUpsAssigned: 8,
             deliveriesToDo: 10,
@@ -168,7 +172,6 @@ function resetDriverSearch(event) {
  * 
  */
 function loadDriverList(driverList) {
-    console.log(driverList)
     document.getElementById("colA").innerHTML = "";
     const template = Handlebars.compile(document.getElementById("driverList").innerHTML);
     
@@ -180,9 +183,32 @@ function loadDriverList(driverList) {
     }
 }
 
+/**
+ * 
+ */
+ function loadGlobalKPIs() {
+    kpis = {
+        emptyMiles: 0,
+        totalMiles: 0,
+        numberOfPickups: 0,
+        income: 0
+    }
+
+    DRIVER_LIST.forEach(d => {
+        kpis["emptyMiles"] += d.kpis.emptyMiles
+        kpis["totalMiles"] += d.kpis.totalMiles
+        kpis["numberOfPickups"] += d.kpis.pickUpsAssigned
+        kpis["income"] += d.kpis.income
+    })
+
+    const template = Handlebars.compile(document.getElementById("globalKPIs_tpl").innerHTML)
+    document.getElementById("globalKPIs").innerHTML = template({ kpis });
+}
+
 (function() {
     initScreenSplitter();  
     initHandlebars();
     loadDriverList();
+    loadGlobalKPIs();
     setEventBindings();  
 })()
