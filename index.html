@@ -50,367 +50,140 @@
 
     <main class="container">
         <div class="row my-3">
-            <div class="col-4">
-                <input type="text" class="form-control" placeholder="Driver's name">
+            <div class="col-3">
+                <input type="text" id="search_input" class="form-control" placeholder="Driver's name">
+            </div>
+            <div class="col-1">
+                <button type="button" id="search_btn" class="btn btn-primary">Search</button>
+            </div>
+            <div class="col-1">
+                <button type="button" id="search_reset" class="btn btn-primary">Reset</button>
             </div>
         </div>
 
         <div class="row">
             <div class="split">
-                <div id="colA" class="px-2">
-                    <!-- Driver One -->
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col">
-                                    <h5>
-                                        <i class="fa-solid fa-id-card"></i>
-                                        <span>John Doe</span>
-                                    </h5>
-                                    
-                                    <div>
-                                        <i class="fa-solid fa-truck"></i>
-                                        <span>Truck ID : 1234</span>
-                                    </div>
-                                    
-                                    <div>
-                                        <i class="fa-solid fa-trailer"></i>
-                                        <span>Trailer ID : 1234</span>
-                                    </div>
-                                </div>
+                <div id="colA" class="px-2"></div>
 
-                                <div class="col">
-                                    <div class="alert alert-info">
-                                        <div style="display: flex; justify-content: space-between; margin: 2px 0;">
-                                            <span>Number of pickups assigned</span> 
-                                            <span class="badge bg-secondary">8</span>
-                                        </div> 
-                                        <div style="display: flex; justify-content: space-between; margin: 2px 0;">
-                                            <span>Number of deliveries to do</span>
-                                            <span class="badge bg-secondary">4</span>
-                                        </div> 
-                                        <div style="display: flex; justify-content: space-between; margin: 2px 0;">
-                                            <span>Empty miles</span> 
-                                            <span class="badge bg-secondary">75</span>
-                                        </div> 
-                                        <div style="display: flex; justify-content: space-between; margin: 2px 0;">
-                                            <span>Total miles</span>
-                                            <span class="badge bg-secondary">500</span>
-                                        </div> 
-                                        <div style="display: flex; justify-content: space-between; margin: 2px 0;">
-                                            <span>Income</span> 
-                                            <span class="badge bg-secondary">4500 $CAD</span>
-                                        </div>
-                                    </div>                                    
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="accordion accordion-flush" id="accordionFlushExample">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="flush-headingOne">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                                Truck status
-                                            </button>
-                                        </h2>
-                                        <div id="flush-collapseOne" class="accordion-collapse collapse py-2" aria-labelledby="flush-headingOne"
-                                            data-bs-parent="#accordionFlushExample">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate cum sed nostrum quaerat dolorem reprehenderit error optio animi veniam eveniet? Libero dolorum unde in nemo accusantium placeat quibusdam cupiditate pariatur.
-                                        </div>
-                                    </div>
-
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="flush-headingTwo">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                                Trips
-                                            </button>
-                                        </h2>
-                                        <div id="flush-collapseTwo" class="accordion-collapse collapse py-2" aria-labelledby="flush-headingTwo"
-                                            data-bs-parent="#accordionFlushExample">
-                                            
-                                            <ul class="list-group">
-                                                <li class="list-group-item">
-                                                    <div class="row">
-                                                        <div class="col-9">
-                                                            <div>ETA : 2022-04-29 12:00:00</div>
-                                                            <div>LOREAL Canada</div>
-                                                            <div>BOUCHERVILLE-QC-CAN &nbsp;<i class="fa-brands fa-canadian-maple-leaf"></i></div>
-                                                        </div>
-
-                                                        <div class="col-3">
-                                                            <div class="btn btn-sm btn-outline-info">Details</div>
-                                                        </div>
-                                                    </div>                                                    
-                                                </li>
-
-                                                <li class="list-group-item">
-                                                    <div class="row">
-                                                        <div class="col-9">
-                                                            <div>ETA : 2022-04-29 12:00:00</div>
-                                                            <div>LOREAL Canada</div>
-                                                            <div>BOUCHERVILLE-QC-CAN &nbsp;<i class="fa-brands fa-canadian-maple-leaf"></i></div>
-                                                        </div>
-
-                                                        <div class="col-3">
-                                                            <div class="btn btn-sm btn-outline-info">Details</div>
-                                                        </div>
-                                                    </div>                                                    
-                                                </li>
-
-                                                <li class="list-group-item">
-                                                    <div class="row">
-                                                        <div class="col-9">
-                                                            <div>ETA : 2022-04-29 12:00:00</div>
-                                                            <div>LOREAL Canada</div>
-                                                            <div>BOUCHERVILLE-QC-CAN &nbsp;<i class="fa-solid fa-flag-usa"></i></div>
-                                                        </div>
-
-                                                        <div class="col-3">
-                                                            <div class="btn btn-sm btn-outline-info">Details</div>
-                                                        </div>
-                                                    </div>                                                    
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Driver Two -->
-                    <div class="card mt-1">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col">
-                                    <h5>John Doe</h5>
-                                    <div>Truck ID : 1234</div>
-                                    <div>Trailer ID : 1234</div>
-                                </div>
-
-                                <div class="col">
-                                    <div class="alert alert-info">
-                                        <div style="display: flex; justify-content: space-between; margin: 2px 0;">
-                                            <span>Number of pickups assigned</span> 
-                                            <span class="badge bg-secondary">8</span>
-                                        </div> 
-                                        <div style="display: flex; justify-content: space-between; margin: 2px 0;">
-                                            <span>Number of deliveries to do</span>
-                                            <span class="badge bg-secondary">4</span>
-                                        </div> 
-                                        <div style="display: flex; justify-content: space-between; margin: 2px 0;">
-                                            <span>Empty miles</span> 
-                                            <span class="badge bg-secondary">75</span>
-                                        </div> 
-                                        <div style="display: flex; justify-content: space-between; margin: 2px 0;">
-                                            <span>Total miles</span>
-                                            <span class="badge bg-secondary">500</span>
-                                        </div> 
-                                        <div style="display: flex; justify-content: space-between; margin: 2px 0;">
-                                            <span>Income</span> 
-                                            <span class="badge bg-secondary">4500 $CAD</span>
-                                        </div>
-                                    </div>                                    
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="accordion accordion-flush" id="accordionFlushExample">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="flush-headingOne">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                                Truck status
-                                            </button>
-                                        </h2>
-                                        <div id="flush-collapseOne" class="accordion-collapse collapse py-2" aria-labelledby="flush-headingOne"
-                                            data-bs-parent="#accordionFlushExample">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate cum sed nostrum quaerat dolorem reprehenderit error optio animi veniam eveniet? Libero dolorum unde in nemo accusantium placeat quibusdam cupiditate pariatur.
-                                        </div>
-                                    </div>
-
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="flush-headingTwo">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                                Trips
-                                            </button>
-                                        </h2>
-                                        <div id="flush-collapseTwo" class="accordion-collapse collapse py-2" aria-labelledby="flush-headingTwo"
-                                            data-bs-parent="#accordionFlushExample">
-                                            
-                                            <ul class="list-group">
-                                                <li class="list-group-item">
-                                                    <div class="row">
-                                                        <div class="col-9">
-                                                            <div>ETA : 2022-04-29 12:00:00</div>
-                                                            <div>LOREAL Canada</div>
-                                                            <div>BOUCHERVILLE-QC-CAN</div>
-                                                        </div>
-
-                                                        <div class="col-3">
-                                                            <div class="btn btn-sm btn-outline-info">Details</div>
-                                                        </div>
-                                                    </div>                                                    
-                                                </li>
-
-                                                <li class="list-group-item">
-                                                    <div class="row">
-                                                        <div class="col-9">
-                                                            <div>ETA : 2022-04-29 12:00:00</div>
-                                                            <div>LOREAL Canada</div>
-                                                            <div>BOUCHERVILLE-QC-CAN</div>
-                                                        </div>
-
-                                                        <div class="col-3">
-                                                            <div class="btn btn-sm btn-outline-info">Details</div>
-                                                        </div>
-                                                    </div>                                                    
-                                                </li>
-
-                                                <li class="list-group-item">
-                                                    <div class="row">
-                                                        <div class="col-9">
-                                                            <div>ETA : 2022-04-29 12:00:00</div>
-                                                            <div>LOREAL Canada</div>
-                                                            <div>BOUCHERVILLE-QC-CAN</div>
-                                                        </div>
-
-                                                        <div class="col-3">
-                                                            <div class="btn btn-sm btn-outline-info">Details</div>
-                                                        </div>
-                                                    </div>                                                    
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Driver Three -->
-                    <div class="card mt-1">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col">
-                                    <h5>John Doe</h5>
-                                    <div>Truck ID : 1234</div>
-                                    <div>Trailer ID : 1234</div>
-                                </div>
-
-                                <div class="col">
-                                    <div class="alert alert-info">
-                                        <div style="display: flex; justify-content: space-between; margin: 2px 0;">
-                                            <span>Number of pickups assigned</span> 
-                                            <span class="badge bg-secondary">8</span>
-                                        </div> 
-                                        <div style="display: flex; justify-content: space-between; margin: 2px 0;">
-                                            <span>Number of deliveries to do</span>
-                                            <span class="badge bg-secondary">4</span>
-                                        </div> 
-                                        <div style="display: flex; justify-content: space-between; margin: 2px 0;">
-                                            <span>Empty miles</span> 
-                                            <span class="badge bg-secondary">75</span>
-                                        </div> 
-                                        <div style="display: flex; justify-content: space-between; margin: 2px 0;">
-                                            <span>Total miles</span>
-                                            <span class="badge bg-secondary">500</span>
-                                        </div> 
-                                        <div style="display: flex; justify-content: space-between; margin: 2px 0;">
-                                            <span>Income</span> 
-                                            <span class="badge bg-secondary">4500 $CAD</span>
-                                        </div>
-                                    </div>                                    
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="accordion accordion-flush" id="accordionFlushExample">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="flush-headingOne">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                                Truck status
-                                            </button>
-                                        </h2>
-                                        <div id="flush-collapseOne" class="accordion-collapse collapse py-2" aria-labelledby="flush-headingOne"
-                                            data-bs-parent="#accordionFlushExample">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate cum sed nostrum quaerat dolorem reprehenderit error optio animi veniam eveniet? Libero dolorum unde in nemo accusantium placeat quibusdam cupiditate pariatur.
-                                        </div>
-                                    </div>
-
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="flush-headingTwo">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                                Trips
-                                            </button>
-                                        </h2>
-                                        <div id="flush-collapseTwo" class="accordion-collapse collapse py-2" aria-labelledby="flush-headingTwo"
-                                            data-bs-parent="#accordionFlushExample">
-                                            
-                                            <ul class="list-group">
-                                                <li class="list-group-item">
-                                                    <div class="row">
-                                                        <div class="col-9">
-                                                            <div>ETA : 2022-04-29 12:00:00</div>
-                                                            <div>LOREAL Canada</div>
-                                                            <div>BOUCHERVILLE-QC-CAN</div>
-                                                        </div>
-
-                                                        <div class="col-3">
-                                                            <div class="btn btn-sm btn-outline-info">Details</div>
-                                                        </div>
-                                                    </div>                                                    
-                                                </li>
-
-                                                <li class="list-group-item">
-                                                    <div class="row">
-                                                        <div class="col-9">
-                                                            <div>ETA : 2022-04-29 12:00:00</div>
-                                                            <div>LOREAL Canada</div>
-                                                            <div>BOUCHERVILLE-QC-CAN</div>
-                                                        </div>
-
-                                                        <div class="col-3">
-                                                            <div class="btn btn-sm btn-outline-info">Details</div>
-                                                        </div>
-                                                    </div>                                                    
-                                                </li>
-
-                                                <li class="list-group-item">
-                                                    <div class="row">
-                                                        <div class="col-9">
-                                                            <div>ETA : 2022-04-29 12:00:00</div>
-                                                            <div>LOREAL Canada</div>
-                                                            <div>BOUCHERVILLE-QC-CAN</div>
-                                                        </div>
-
-                                                        <div class="col-3">
-                                                            <div class="btn btn-sm btn-outline-info">Details</div>
-                                                        </div>
-                                                    </div>                                                    
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="colB">
-
-                </div>
+                <div id="colB"></div>
             </div>
         </div>        
     </main>
 
+    <template id="driverList">
+        {{#each driverList}}
+        <div class="card my-2">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col">
+                        <h5>
+                            <i class="fa-solid fa-id-card"></i>
+                            <span>{{ this.firstName }} {{ this.lastName }}</span>
+                        </h5>
+                        
+                        <div>
+                            <i class="fa-solid fa-truck"></i>
+                            <span>Truck ID : {{ this.truck.id }}</span>
+                        </div>
+                        
+                        <div>
+                            <i class="fa-solid fa-trailer"></i>
+                            <span>Trailer ID : {{ this.trailer.id }}</span>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="alert alert-info"> 
+                            <div style="display: flex; justify-content: space-between; margin: 2px 0;">
+                                <span>Empty miles</span> 
+                                <span class="badge bg-secondary">{{ this.kpis.emptyMiles }}</span>
+                            </div> 
+                            <div style="display: flex; justify-content: space-between; margin: 2px 0;">
+                                <span>Total miles</span>
+                                <span class="badge bg-secondary">{{ this.kpis.totalMiles }}</span>
+                            </div> 
+                            <div style="display: flex; justify-content: space-between; margin: 2px 0;">
+                                <span>Income</span> 
+                                <span class="badge bg-secondary">{{ this.kpis.income }} $CAD</span>
+                            </div>
+                        </div>                                    
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    Truck status
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse py-2" aria-labelledby="flush-headingOne"
+                                data-bs-parent="#accordionFlushExample">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate cum sed nostrum quaerat dolorem reprehenderit error optio animi veniam eveniet? Libero dolorum unde in nemo accusantium placeat quibusdam cupiditate pariatur.
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" >
+
+                                    <div style="display: flex; justify-content: space-between; padding-right: 10px; width: 100%;">
+                                        <div>
+                                            Trips
+                                        </div>
+                                        <div>
+                                            <div style="display: flex; font-size: 12px;">
+                                                <span>Number of pickups assigned</span>&nbsp;
+                                                <span class="badge bg-secondary">{{ this.kpis.pickUpsAssigned }}</span>
+                                            </div> 
+                                            <div style="display: flex; font-size: 12px;">
+                                                <span>Number of deliveries to do</span>&nbsp;
+                                                <span class="badge bg-secondary">{{ this.kpis.deliveriesToDo }}</span>
+                                            </div>
+                                        </div>
+                                    </div>                                                
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse py-2" aria-labelledby="flush-headingTwo"
+                                data-bs-parent="#accordionFlushExample">
+                                
+                                <ul class="list-group">
+                                    {{#each this.trips}}
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <div class="col-9">
+                                                <div>{{ this.eta }}</div>
+                                                <div>{{ this.client }}</div>
+                                                <div>
+                                                    <span>{{ this.address.city }}-{{ this.address.province }}-{{ this.address.country }}</span>&nbsp;
+
+                                                    {{#if (isBasedInCanada this.address.country)}}
+                                                    <i class="fa-brands fa-canadian-maple-leaf"></i>
+                                                    {{/if}}
+                                                </div>
+                                            </div>
+
+                                            <div class="col-3">
+                                                <div class="btn btn-sm btn-outline-info">Details</div>
+                                            </div>
+                                        </div>                                                    
+                                    </li>
+                                    {{/each}}                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </template>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/split.js/1.6.2/split.min.js" integrity="sha512-to2k78YjoNUq8+hnJS8AwFg/nrLRFLdYYalb18SlcsFRXavCOTfBF3lNyplKkLJeB8YjKVTb1FPHGSy9sXfSdg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./index.js"></script>
 </body>
