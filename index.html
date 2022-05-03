@@ -195,7 +195,14 @@
                             <i class="fa-solid fa-briefcase"></i>&nbsp;
                             <span>{{ this.clientName }}</span>
                         </h5>
+
+                        <div>
+                            <i class="fa-solid fa-map-location-dot"></i>&nbsp;
+                            <span>{{ getClientFullAddress this.orderList }}</span>
+                        </div>
                     </div>
+
+                    <br />
 
                     <div class="row">
                         <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -219,12 +226,7 @@
                                         {{#each this.orderList}}
                                             <li class="list-group-item">
                                                 <div class="row">
-                                                    <div class="col-9">
-                                                        <div>
-                                                            <i class="fa-solid fa-map-location-dot"></i>&nbsp;
-                                                            {{ this.address.stNumber }} {{ this.address.stName }}, {{ this.address.zipCode }} {{ this.address.city }}
-                                                        </div>
-                                                        
+                                                    <div class="col-9">                                                        
                                                         <div>
                                                             <i class="fa-solid fa-calendar-day"></i>&nbsp;
                                                             {{ this.pickupDate }}                                                            

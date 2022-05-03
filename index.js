@@ -168,6 +168,7 @@ function initHandlebars() {
     Handlebars.registerHelper("count", count);
     Handlebars.registerHelper("isBasedInCanada", isBasedInCanada);
     Handlebars.registerHelper("isBasedInUSA", isBasedInUSA);
+    Handlebars.registerHelper("getClientFullAddress", getClientFullAddress);
 }
 
 /**
@@ -190,6 +191,15 @@ function isBasedInCanada(country) {
  */
 function isBasedInUSA(country) {
     return "USA" === country;
+}
+
+/**
+ * 
+ * @param {*} orderList 
+ */
+function getClientFullAddress(orderList) {
+    const address = orderList[0].address;
+    return  `${ address.stNumber } ${ address.stName }, ${ address.zipCode } ${ address.city }`
 }
 
 /**
