@@ -152,7 +152,26 @@
                                             </div>
 
                                             <div class="col-3">
-                                                <div class="btn btn-sm btn-outline-info">Details</div>
+                                                <div class="btn btn-sm btn-outline-info" data-bs-toggle="modal" data-bs-target="#{{ this.id }}">
+                                                    Details
+                                                </div>
+
+                                                <div class="modal fade" id="{{ this.id }}" tabindex="-1" aria-labelledby="{{ this.id }}" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="{{ this.id }}">{{ this.id }} details</h5>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                
+                                                            <div class="modal-body">
+                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam necessitatibus iure vel 
+                                                                porro nam velit, dolor corrupti minima, reiciendis, asperiores adipisci blanditiis. Omnis 
+                                                                deserunt nemo ullam rem dolor tenetur veniam ?
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>                                                    
                                     </li>
@@ -253,7 +272,26 @@
                                                     </div>
         
                                                     <div class="col-3">
-                                                        <div class="btn btn-sm btn-outline-info">Details</div>
+                                                        <div class="btn btn-sm btn-outline-info" data-bs-toggle="modal" data-bs-target="#{{ this.id }}">
+                                                            Details
+                                                        </div>
+        
+                                                        <div class="modal fade" id="{{ this.id }}" tabindex="-1" aria-labelledby="{{ this.id }}" aria-hidden="true">
+                                                            <div class="modal-dialog">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title" id="{{ this.id }}">{{ this.id }} details</h5>
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                    </div>
+                                                        
+                                                                    <div class="modal-body">
+                                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam necessitatibus iure vel 
+                                                                        porro nam velit, dolor corrupti minima, reiciendis, asperiores adipisci blanditiis. Omnis 
+                                                                        deserunt nemo ullam rem dolor tenetur veniam ?
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>                                                    
                                             </li>

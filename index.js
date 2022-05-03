@@ -21,7 +21,7 @@ const DRIVER_LIST = [
         },
         trips: [
             {
-                id: "trip#00001",
+                id: "trip-00001",
                 eta: "2022-05-01 12:00:00",
                 client: "L'Oréal",
                 address: {
@@ -31,7 +31,7 @@ const DRIVER_LIST = [
                 }
             },
             {
-                id: "trip#00008",
+                id: "trip-00008",
                 eta: "2022-05-01 12:00:00",
                 client: "L'Oréal",
                 address: {
@@ -41,7 +41,7 @@ const DRIVER_LIST = [
                 }
             },
             {
-                id: "trip#00010",
+                id: "trip-00010",
                 eta: "2022-05-01 12:00:00",
                 client: "L'Oréal",
                 address: {
@@ -74,7 +74,7 @@ const DRIVER_LIST = [
         },
         trips: [
             {
-                id: "trip#00012",
+                id: "trip-00012",
                 eta: "2022-05-01 12:00:00",
                 client: "L'Oréal",
                 address: {
@@ -84,7 +84,7 @@ const DRIVER_LIST = [
                 }
             },
             {
-                id: "trip#00015",
+                id: "trip-00015",
                 eta: "2022-05-01 12:00:00",
                 client: "L'Oréal",
                 address: {
@@ -94,7 +94,7 @@ const DRIVER_LIST = [
                 }
             },
             {
-                id: "trip#00018",
+                id: "trip-00018",
                 eta: "2022-05-01 12:00:00",
                 client: "L'Oréal",
                 address: {
@@ -109,7 +109,7 @@ const DRIVER_LIST = [
 
 const ORDER_LIST = [
     {
-        id: "Order#0001",
+        id: "Order-0001",
         clientId: "Client-0001",
         clientName: "L'Oréal",
         pickupDate: "2022-05-01",
@@ -125,7 +125,7 @@ const ORDER_LIST = [
         }
     },
     {
-        id: "Order#0002",
+        id: "Order-0002",
         clientId: "Client-0001",
         clientName: "L'Oréal",
         pickupDate: "2022-05-01",
@@ -141,7 +141,7 @@ const ORDER_LIST = [
         }
     },
     {
-        id: "Order#0003",
+        id: "Order-0003",
         clientId: "Client-0002",
         clientName: "Coca-Cola",
         pickupDate: "2022-05-01",
