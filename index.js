@@ -2,8 +2,10 @@ const DRIVER_LIST = [
     {
         firstName: "John",
         lastName: "Doe",
-        now: "Delivery",
-        next: "Rest",
+        currentActivity: "Delivery",
+        currentLocation: "45.5853157:-73.4701117",
+        isLate: true,
+        nextActivity: "Rest",
         kpis: {
             pickUpsAssigned: 8,
             deliveriesToDo: 10,
@@ -53,8 +55,10 @@ const DRIVER_LIST = [
     {
         firstName: "Jane",
         lastName: "Doe",
-        now: "Delivery",
-        next: "Rest",
+        currentActivity: "Delivery",
+        currentLocation: "45.5853157:-73.4701117",
+        isLate: false,
+        nextActivity: "Rest",
         kpis: {
             pickUpsAssigned: 8,
             deliveriesToDo: 10,
@@ -168,6 +172,7 @@ function initHandlebars() {
     Handlebars.registerHelper("count", count);
     Handlebars.registerHelper("isBasedInCanada", isBasedInCanada);
     Handlebars.registerHelper("isBasedInUSA", isBasedInUSA);
+    Handlebars.registerHelper("getDriverLocation", getDriverLocation)
     Handlebars.registerHelper("getClientFullAddress", getClientFullAddress);
 }
 
@@ -191,6 +196,15 @@ function isBasedInCanada(country) {
  */
 function isBasedInUSA(country) {
     return "USA" === country;
+}
+
+/**
+ * 
+ * @param {*} coords 
+ */
+function getDriverLocation(coords) {
+    const [lat, lng] = coords.split(":");
+    return `https://www.google.com/maps/@${lat},${lng},15z`;
 }
 
 /**
