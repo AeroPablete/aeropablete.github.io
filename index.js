@@ -1,5 +1,6 @@
 const DRIVER_LIST = [
     {
+        id: "Driver-1234",
         firstName: "John",
         lastName: "Doe",
         currentActivity: "Delivery",
@@ -53,6 +54,7 @@ const DRIVER_LIST = [
         ]
     },
     {
+        id: "Driver-1284",
         firstName: "Jane",
         lastName: "Doe",
         currentActivity: "Delivery",
